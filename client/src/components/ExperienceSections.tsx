@@ -240,15 +240,29 @@ export const ReferencesSection: React.FC = () => {
                 "{ref.relation}"
               </p>
 
-              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                <span className="text-xs text-slate-400">Contact:</span>
-                <a
-                  href={`tel:${ref.phone}`}
-                  className="inline-flex items-center space-x-1.5 text-xs font-mono font-semibold text-white hover:text-[#c5a880] transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-[#c5a880]" />
-                  <span>{ref.phone}</span>
-                </a>
+              <div className="pt-4 border-t border-slate-800/80 space-y-2">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="text-xs text-slate-400">Phone:</span>
+                  <a
+                    href={`tel:${ref.phone}`}
+                    className="inline-flex items-center space-x-1.5 text-xs font-mono font-semibold text-white hover:text-[#c5a880] transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-[#c5a880]" />
+                    <span>{ref.phone}</span>
+                  </a>
+                </div>
+                {ref.email && (
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-xs text-slate-400">Email:</span>
+                    <a
+                      href={`mailto:${ref.email}`}
+                      className="inline-flex min-w-0 items-center space-x-1.5 text-xs font-mono font-semibold text-white hover:text-[#c5a880] transition-colors"
+                    >
+                      <Mail className="w-3.5 h-3.5 flex-shrink-0 text-[#c5a880]" />
+                      <span className="break-all text-right">{ref.email}</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

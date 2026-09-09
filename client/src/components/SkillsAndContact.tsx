@@ -126,6 +126,17 @@ export const ContactSection: React.FC = () => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = `Culinary Opportunity Inquiry — ${formData.organization}`;
+    const body = [
+      `Name / Hiring Lead: ${formData.name}`,
+      `Vessel / Organization: ${formData.organization}`,
+      `Role Category: ${formData.roleType}`,
+      "",
+      "Opportunity Brief:",
+      formData.message,
+    ].join("\n");
+
+    window.location.href = `mailto:${CHEF_DATA.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setFormSubmitted(true);
   };
 
@@ -242,9 +253,9 @@ export const ContactSection: React.FC = () => {
                 <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
                   <Check className="w-6 h-6" />
                 </div>
-                <h4 className="font-serif text-xl font-bold text-white">Inquiry Received</h4>
+                <h4 className="font-serif text-xl font-bold text-white">Email Draft Prepared</h4>
                 <p className="text-xs text-slate-300 max-w-md mx-auto">
-                  Thank you for reaching out. Chef Carlo has received your message and will respond promptly via email or WhatsApp.
+                  Your email application should open with the inquiry details addressed to Chef Carlo. Review the draft and press Send to complete the inquiry.
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
@@ -320,7 +331,7 @@ export const ContactSection: React.FC = () => {
                   className="w-full flex items-center justify-center space-x-2 py-3 px-6 rounded-xl bg-[#c5a880] text-[#0b0f14] font-bold text-xs tracking-wider uppercase hover:bg-[#d6bc96] transition-all shadow-lg shadow-[#c5a880]/20"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Transmit Inquiry</span>
+                  <span>Open Email Draft</span>
                 </button>
               </form>
             )}

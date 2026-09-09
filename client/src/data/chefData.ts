@@ -171,6 +171,7 @@ export const CHEF_DATA = {
       title: "Head Chef",
       company: "Dar Al Abbar Company",
       phone: "+966 50 364 2741",
+      email: "anton.mykytas@radicalfood.com",
       relation: "Direct Executive Chef & Culinary Supervisor (Radical / Dar Al Abbar)"
     },
     {
@@ -178,6 +179,7 @@ export const CHEF_DATA = {
       title: "HR Manager",
       company: "United Foods Company",
       phone: "+966 55 180 1553",
+      email: "ufcobellbird-hrraghad@gmail.com",
       relation: "Human Resources Management (United Foods Company)"
     }
   ] as ReferenceItem[],
@@ -218,5 +220,5 @@ export const CHEF_DATA = {
       image: "/manus-storage/yacht_deck_dining_7040ace4.jpg"
     }
   ],
-  pdfDownloadUrl: "/manus-storage/Carlo_Corro_Sous_Chef_CV_Portfolio_Updated_ae1ee73a.pdf"
+  pdfDownloadUrl: "/manus-storage/Carlo_Corro_Sous_Chef_CV_Portfolio_Updated_a04cedfd.pdf"
 };

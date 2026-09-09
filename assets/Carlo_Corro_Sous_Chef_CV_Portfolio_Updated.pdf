@@ -5445,13 +5445,14 @@ endobj
 /Font <<
 /F1 9 0 R
 /F1-0 15 0 R
+/F1-1 16 0 R
 /F2 11 0 R
-/F2-0 16 0 R
+/F2-0 17 0 R
 /helv 11 0 R
 >>
 /ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
 >>
-/Contents 17 0 R
+/Contents 18 0 R
 /MediaBox [ 0 0 595.28 841.89 ]
 /Annots [ ]
 /Parent 2 0 R
@@ -5468,6 +5469,15 @@ endobj
 endobj
 16 0 obj
 <<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+17 0 obj
+<<
 /BaseFont /Helvetica-Bold
 /Encoding /WinAnsiEncoding
 /Name /F2
@@ -5475,11 +5485,12 @@ endobj
 /Type /Font
 >>
 endobj
-17 0 obj
+18 0 obj
 <<
-/Length 3377
+/Length 3678
 >>
 stream
+q
 q
 2 J
 0.57 w
@@ -5610,10 +5621,37 @@ T*
 ET
 Q
 
+Q
+q
+0.0 0.0 595.28 841.89 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-1 12 Tf
+14.4 TL
+ET
+0.294118 0.333333 0.388235 rg
+BT
+/F1-1 7.6 Tf
+9.12 TL
+ET
+BT
+1 0 0 1 43 211 Tm
+(Email\072 anton\056mykytas\100radicalfood\056com) Tj
+T*
+ET
+BT
+1 0 0 1 310 211 Tm
+(Email\072 ufcobellbird\055hrraghad\100gmail\056com) Tj
+T*
+ET
+Q
+
 endstream
 endobj
 xref
-0 18
+0 19
 0000000000 65535 f 
 0000000015 00000 n 
 0000000054 00000 n 
@@ -5629,15 +5667,16 @@ xref
 0001204000 00000 n 
 0001204113 00000 n 
 0001211576 00000 n 
-0001211851 00000 n 
-0001211959 00000 n 
-0001212072 00000 n 
+0001211864 00000 n 
+0001211972 00000 n 
+0001212080 00000 n 
+0001212193 00000 n 
 trailer
 <<
-/Size 18
+/Size 19
 /Root 3 0 R
 /Info 1 0 R
 >>
 startxref
-1215502
+1215924
 %%EOF
